@@ -1,0 +1,62 @@
+body {
+   
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+ 
+
+  .mainNavBar img{
+    width: 10%;
+  }
+
+  .mainNavBar{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    
+  }
+
+  .mainNavBar h1{
+    margin-left: 4rem;
+    
+  }
+
+ 
+.navBar{
+    border: 1px solid black;
+}
+.navBar ul{
+    height: 40px;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 2px;
+    
+    
+    
+   }
+   a:link{
+    text-decoration: none;
+   }
+
+  .navBar li{
+    
+    margin-left: 4rem;
+  }
+
+  .mainImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainImage img{
+    width: 80%;
+    object-fit: cover;
+    height: 80vh;
+    margin: 4px
+  }

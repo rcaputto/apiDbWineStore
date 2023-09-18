@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<main class="all-form">
+    <!-- register form -->
+    <div class="center"></div>
+    <h1>Creacion de producto</h1>
+    
+    <form action="/api/products/newProduct" method="POST" enctype="multipart/form-data" id="form">
+        
+            <label for="name">
+            <input type="text"  name="name" class="name" placeholder="Nombre producto">
+            </label>
+            <label for="price">
+            <input type="number"  name="price" class="price" placeholder="Precio">
+            </label>
+            <label for="description">
+                <input type="text"  name="description" class="description" placeholder="description">
+                </label>
+                <label for="stock">
+                    <input type="number"  name="stock" class="stock" placeholder="stock">
+                    </label>
+                    <label for="id_categoria">
+                        <input type="number"  name="id_categoria" class="id_categoria" placeholder="id_categoria">
+                        </label>
+                        <label for="id_marca">
+                            <input type="number"  name="id_marca" class="id_marca" placeholder="Marca">
+                            </label>
+                            <label for="image">
+                                <input type="file"  name="image" class="id_marca" placeholder="imagen">
+                                </label>
+                        </div>
+
+                        <input type="submit" value="Subir producto">
+                        
+
+    </form>
+    <script>
+        function logFormData() {
+            const name = document.querySelector('input[name="name"]').value;
+            const price = document.querySelector('input[name="price"]').value;
+            console.log(`Name: ${name}, Price: ${price}`);
+        }
+    </script>
+</html>

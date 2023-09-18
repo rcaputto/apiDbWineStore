@@ -1,0 +1,51 @@
+1.- Tabla "Marca":
+Campo ID_Marca (Clave primaria)
+Campo Nombre
+
+2.- Tabla "Categoria":
+Campo ID_Categoria (Clave primaria)
+Campo Nombre
+
+3.- Tabla "Usuarios":
+Campo ID_Usuario (Clave primaria)
+Campo Nombre
+Campo Apellido
+Campo CorreoElectronico
+Campo Contraseña
+Campo Direccion
+Campo Ciudad
+Campo Estado
+Campo CodigoPostal
+Campo Rol (para distinguir entre administradores y clientes)
+
+4.-Tabla "Producto":
+Campo ID_Producto (Clave primaria)
+Campo Nombre
+Campo Descripcion
+Campo Precio
+Campo Stock
+Campo ID_Marca (Clave foránea que hace referencia a la tabla "Marca")
+Campo ID_Categoria (Clave foránea que hace referencia a la tabla "Categoria")
+
+5.-Tabla "Carrito":
+Campo ID_Carrito (Clave primaria)
+Campo ID_Usuario (Clave foránea que hace referencia a la tabla "Usuarios")
+
+6.-Tabla "ItemCarrito":
+Campo ID_Item (Clave primaria)
+Campo ID_Carrito (Clave foránea que hace referencia a la tabla "Carrito")
+Campo ID_Producto (Clave foránea que hace referencia a la tabla "Producto")
+Campo Cantidad
+
+7.-Tabla "Orden":
+Campo ID_Orden (Clave primaria)
+Campo ID_Usuario (Clave foránea que hace referencia a la tabla "Usuarios")
+Campo Fecha
+Campo Estado (por ejemplo, pendiente, enviado, entregado, etc.)
+
+8.-Tabla "ItemOrden":
+Campo ID_Item (Clave primaria)
+Campo ID_Orden (Clave foránea que hace referencia a la tabla "Orden")
+Campo ID_Producto (Clave foránea que hace referencia a la tabla "Producto")
+Campo Cantidad
+Campo PrecioUnitario
